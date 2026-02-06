@@ -11,8 +11,8 @@
 // 3. Write a function named calculateShipping:
 // Input: integer for the weight and a character ('L' for local or 'I' for international) for the detination
 // Logic:
-// - If local ('L'): If less than 50 lbs cost is $5; If more than 50 lbs the cost is $8
-// - If international ('I'): If less than 50 lbs cost is $12; If more than 50 lbs the cost is $20
+// - If local ('L'): If less than or equal to 50 lbs cost is $5; If more than 50 lbs the cost is $8
+// - If international ('I'): If less than or equal to 50 lbs cost is $12; If more than 50 lbs the cost is $20
 // - If destination is anything else, cost is $0
 // Output: The total cost with two decimals
 /**** TODO ****/
