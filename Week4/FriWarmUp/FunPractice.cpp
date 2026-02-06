@@ -1,0 +1,40 @@
+// The goal of this warm up is to become familiar with writing functions
+// The content of this script is focused on calculating shipping costs based on the weight of the package and the destination zone
+// The output of this script is the final price for a customer
+
+// 1. Write the preprocessor directive
+/**** TODO ****/
+
+// 2. Use the standard namspace to avoid naming conflicts:
+/**** TODO ****/
+
+// 3. Write a function named calculateShipping:
+// Input: integer for the weight and a character ('L' for local or 'I' for international) for the detination
+// Logic:
+// - If local ('L'): If less than or equal to 50 lbs cost is $5; If more than 50 lbs the cost is $8
+// - If international ('I'): If less than or equal to 50 lbs cost is $12; If more than 50 lbs the cost is $20
+// - If destination is anything else, cost is $0
+// Output: The total cost with two decimals
+/**** TODO ****/
+
+// **************** Stop Here **************** //
+// End of class task
+
+// 4. Write the main function:
+// - Ask the user for weight and destination
+// - Call calculateShipping and store the result
+// - If the result is 0, print "Invalid Destination Entered"
+// - Otherwise, print the final cost
+/**** TODO ****/
+
+
+// **************** Command Line Reminders **************** //
+// We use -o so we can name the executable file and not get a.exe/a.out rewritten every time!
+
+// Windows
+// To compile your code: g++ -std=c++17 -Wall -Werror -Wpedantic FunPractice.cpp -o FunPractice.exe
+// To execute your code: ./FunPractice.exe (As long as -o was used)
+
+// Mac
+// To compile your code: g++ -std=c++17 -Wall -Werror -Wpedantic FunPractice.cpp -o FunPractice.out
+// To execute your code: ./FunPractice.out (As long as -o was used)
