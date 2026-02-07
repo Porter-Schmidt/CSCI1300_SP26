@@ -3,10 +3,11 @@
 // The output of this script is the final price for a customer
 
 // 1. Write the preprocessor directive
-/**** TODO ****/
+#include <iostream>
+#include <iomanip>
 
 // 2. Use the standard namspace to avoid naming conflicts:
-/**** TODO ****/
+using namespace std;
 
 // 3. Write a function named calculateShipping:
 // Input: integer for the weight and a character ('L' for local or 'I' for international) for the detination
@@ -15,7 +16,30 @@
 // - If international ('I'): If less than or equal to 50 lbs cost is $12; If more than 50 lbs the cost is $20
 // - If destination is anything else, cost is $0
 // Output: The total cost with two decimals
-/**** TODO ****/
+
+double calculateShipping(int weight, char destination) {
+    double cost;
+
+    if (destination == 'L'){
+        if (weight <= 50) {
+            cost = 5.00;
+        } else if (weight > 50) {
+            cost = 8.00;
+        }
+    } else if (destination == 'I') {
+        if (weight <= 50) {
+            cost = 12.00;
+        } else if (weight > 50) {
+            cost = 20.00;
+        }
+    } else {
+        cost = 0.00;
+    }
+    
+    return cost;
+}
+
+
 
 // **************** Stop Here **************** //
 // End of class task
