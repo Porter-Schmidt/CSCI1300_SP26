@@ -70,6 +70,8 @@ int main() {
     else {
         cout << "The final cost is $" << cost << endl;
     }
+
+    return 0; // Optional
 }
 
 // **************** Command Line Reminders **************** //
