@@ -8,8 +8,8 @@ using namespace std;
 // Think of score1 as a copy
 // Analogy: playerScore is the PDF/argument that you sent to a friend
 // You still have the original PDF, your friend now has a copy called score1, that does not change your original PDF
-int updateScore(int score1) {
-    score1 = score1 + 10; // Note that we changed the parameter!
+int updateScore(int & score1) {
+    score1 = score1 + 10; 
     return score1;
 }
 
@@ -17,7 +17,7 @@ int updateScore(int score1) {
 // // Think of score1 as the same as the argument playerScore - not a copy
 // // Analogy: playerScore is a shared Google Doc that you share with a friend
 // // Any changes your friend makes to the Google Doc, shows up in your version as well
-// int updateScore(int & score1) {
+// int updateScore(int &score1) {
 //     score1 = score1 + 10; // Whatever you do to the parameter - you do to the argument
 //     return score1;
 // }
@@ -27,7 +27,7 @@ int main() {
 
     int newScore = updateScore(playerScore); // playerScore is the argument
 
-    cout << "PASS BY VALUE" << endl;
+    cout << "PASS BY value" << endl;
     cout << "Player's score is: " << playerScore << endl; // 50
     cout << "The new score is: " << newScore << endl; // 60
 
