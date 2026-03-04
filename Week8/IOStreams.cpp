@@ -13,6 +13,7 @@ void part1() {
     // Step 1: Open the input file "input.txt"
 
 
+
     // Step 2: Check if the file opened (Print an error if not)
 
 
