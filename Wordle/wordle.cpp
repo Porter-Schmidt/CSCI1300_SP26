@@ -1,5 +1,8 @@
+// Plan
+//  Add word bank for random word
+//  Add allowed guesses to user can't type random shit
+
 #include <iostream>
-#include <fstream>
 #include <string>
 using namespace std;
 
@@ -18,7 +21,7 @@ int main() {
     cout << "Type 'end' to give up" << endl;
 
     while (attempts <= 6 && guess != word) {
-        cin >> guess;
+        cin >> guess;o
         if (guess == "end") {
             break;
         }
