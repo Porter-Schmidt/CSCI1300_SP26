@@ -30,6 +30,9 @@ void part2() {
 
 
     // Step 2: Read and print each line from the file
+    cout << "Printing lines from input.txt: " << endl;
+    string line;
+    // TODO
 
 
     // Reset the file to read from the beginning again (Completed)
@@ -43,6 +46,9 @@ void part2() {
 
 
     // Step 3: Read and print each word from the file (Not each line)
+    cout << endl << "Printing individual words from input.txt: " << endl;
+    string word;
+    // TODO
 
 
     // Reset the file to read from the beginning again (Completed)
@@ -55,6 +61,9 @@ void part2() {
 
 
     // Step 4: Read and print each character individually
+    cout << "Read each character from input2.txt: " << endl;
+    char ch;
+    // TODO
 
 
     // Reset the file to read from the beginning again (Completed)
@@ -67,6 +76,11 @@ void part2() {
 
 
     // Step 5: Count and print all uppercase letters
+    cout << endl << "Count uppercase letters: " << endl;
+    char character;
+    int upperCount = 0;
+    // TODO 
+    cout << endl << "Total uppercase letters: " << upperCount << endl;
 
 
     // Reset the file to read from the beginning again (Completed)
@@ -79,6 +93,10 @@ void part2() {
 
 
     // Step 6: Read using a delimiter (comma) and print each section
+    cout << endl << "Read with a comma delimiter: " << endl;
+    string line;
+    char delimiter = ',';
+    // TODO
 
 
 }
