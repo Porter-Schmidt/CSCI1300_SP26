@@ -1,5 +1,5 @@
 #include <iostream>
-// #include // Part 1: For File I/O Streams
+#include <fstream> // Part 1: For File I/O Streams
 // #include // Part 2: For getline()
 // #include // Part 2: For helper functions like isupper() or isdigit()
 // #include // Part 3: For stream manipulators like setw()
@@ -11,13 +11,32 @@ void part1() {
     cout << "---------------" << endl;
 
     // Step 1: Open the input file "input.txt"
+    // Option 1: Delcare a Variable
+    ifstream inFile;
+    inFile.open("input.txt");
+
+    // Option 2: Shortcut
+    // ifstream inFile("input.txt");
+
 
 
 
     // Step 2: Check if the file opened (Print an error if not)
+    // Option 1
+    if (inFile.fail()) {
+        cout << "Error opening input.txt" << endl;
+        return;
+    }
 
+    // Option 2
+    if (!(inFile.is_open())) {
+        cout << "Error opening input.txt" << endl;
+        return;
+    }
 
     // Step 3: Close the file
+    inFile.close();
+
 
 
     cout << endl;
@@ -28,12 +47,21 @@ void part2() {
     cout << "----------------------" << endl;
 
     // Step 1: Open the input file input2.txt
+    ifstream inFile;
+    inFile.open("input2.txt");
+    if(inFile.fail()) {
+        cout << "Error opening input2.txt file" << endl;
+    }
+
 
 
     // Step 2: Read and print each line from the file
     cout << "Printing lines from input.txt: " << endl;
     string line;
-    // TODO
+
+    while (getline(inFile, line)) {
+        cout << line << endl;
+    }
 
 
     // Reset the file to read from the beginning again (Completed)
@@ -50,7 +78,9 @@ void part2() {
     cout << endl << "Printing individual words from input.txt: " << endl;
     string word;
     // TODO
-
+    while (inFile >> word) {
+        cout << "Word: " << word << endl;
+    }
 
     // Reset the file to read from the beginning again (Completed)
     inFile.close();
@@ -65,6 +95,9 @@ void part2() {
     cout << "Read each character from input2.txt: " << endl;
     char ch;
     // TODO
+    while(inFile.get(ch)) {
+        cout << "Ch: " << ch << endl;
+    }
 
 
     // Reset the file to read from the beginning again (Completed)
@@ -81,6 +114,12 @@ void part2() {
     char character;
     int upperCount = 0;
     // TODO 
+    while (inFile.get(character)) {
+        if (isupper(character)) {
+            cout << "Character: " << character << endl;
+            upperCount++;
+        }
+    }
     cout << endl << "Total uppercase letters: " << upperCount << endl;
 
 
@@ -95,9 +134,12 @@ void part2() {
 
     // Step 6: Read using a delimiter (comma) and print each section
     cout << endl << "Read with a comma delimiter: " << endl;
-    string line;
+    string line2;
     char delimiter = ',';
     // TODO
+    while (getline(inFile, line2, delimiter)) {
+        cout << "Line: " << line2 << endl;
+    }
 
 
 }
