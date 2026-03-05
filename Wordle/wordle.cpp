@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <string>
+#include <fstream>
 using namespace std;
 
 int main() {
@@ -21,7 +22,7 @@ int main() {
     cout << "Type 'end' to give up" << endl;
 
     while (attempts <= 6 && guess != word) {
-        cin >> guess;o
+        cin >> guess;
         if (guess == "end") {
             break;
         }
@@ -57,4 +58,20 @@ int main() {
     } else {
         cout << "The word was: " << word << endl;
     }
+}
+
+bool check(string guess) {
+    bool works = false;
+    fstream inFile;
+    inFile.open("allowedWords.txt");
+
+    return works;
+}
+
+string newWord() {
+    fstream inFile;
+    inFile.open("wordBank.txt");
+    string word = "";
+
+    return word;
 }

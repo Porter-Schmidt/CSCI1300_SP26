@@ -180,11 +180,11 @@ void part3() {
 int main() {
     cout << "The start of the script: " << endl;
 
-    part1(); // Calling func part1 to execute
+    // part1(); // Calling func part1 to execute
 
     cout << "Part 1 executed and we returned to main" << endl << endl;
 
-    // part2(); // Calling func part2 to execute
+    part2(); // Calling func part2 to execute
 
     cout << "Part 2 executed and we returned to main" << endl << endl;
 
