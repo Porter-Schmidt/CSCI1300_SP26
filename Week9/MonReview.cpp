@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// Why use const?
 const int CAPACITY = 10;
 const int ROWS = 3;
 const int COLS = 4;
