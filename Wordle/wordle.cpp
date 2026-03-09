@@ -8,7 +8,7 @@
 using namespace std;
 
 int main() {
-    string word = "break";
+    string word = "horse";
     string guess;
     int attempts = 0;
 
