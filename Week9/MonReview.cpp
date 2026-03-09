@@ -111,6 +111,9 @@ void demo1D_insert_example() {
 
 // 2D Arrays
 
+// *********************
+// IMPORTANT NOTE: The cols size has to be included if passing an array as a param
+// Short explanation: pointers - more advanced concept not taught in this course
 void init2D(int arr[][COLS], int rows, int cols, int start) {
     int v = start;
 
