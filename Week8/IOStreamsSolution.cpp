@@ -134,9 +134,9 @@ void part2() {
 
     // Step 6: Read using a delimiter (comma) and print each section
     cout << endl << "Read with a comma delimiter: " << endl;
-    string line;
+    string line2;
     char delimiter = ',';
-    while (getline(inFile, line, delimiter)) {
+    while (getline(inFile, line2, delimiter)) {
         cout << line << endl;
     }
 }
