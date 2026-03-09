@@ -38,10 +38,10 @@ int main() {
     cout << student2.gpa << endl;
     cout << student2.enrolled << endl;
 
-    student student3;
-    student3.name = "Squidward";
-    student3.gpa = 1.5;
-    student3.enrolled = false;
+    student student3 = {"Squidward", 1.5, false};
+    // student3.name = "Squidward";
+    // student3.gpa = 1.5;
+    // student3.enrolled = false;
 
     cout << student3.name << endl;
     cout << student3.gpa << endl;
