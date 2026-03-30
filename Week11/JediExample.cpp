@@ -26,7 +26,7 @@ class Jedi {
 
         // TODO 5. Initializer list here too
         Jedi(string n, Lightsaber s, int r)
-        : name(n), saber(s), rank(r) {}
+        : name(n), rank(r), saber(s) {}
 
         // TODO 2. We call public member vars directly here
         void show() const {
