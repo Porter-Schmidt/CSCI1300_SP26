@@ -29,7 +29,7 @@ class Garage {
             }
         }
 
-        // TODO Create a function so we can add cars to the garage later
+        // TODO Create a function so we can add cars and their models to the garage later
 };
 
 int main() {

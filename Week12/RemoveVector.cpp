@@ -8,7 +8,7 @@ int main() {
     // Remove the element at index 1
     // .begin is another member function
     // Essentially points us to the first element in a vector - index 0
-    train_cars.erase(train_cars.begin() + 1);
+    train_cars.erase(train_cars.begin());
 
     // Not pretty
     // Recall how we remove elements of an array though...
